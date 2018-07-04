@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Crystal Collector</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+
+
+
+    <div class="jumbotron" style="background-color: indianred; color: white">
+      <div class="container text-center">
+        <h1 class="">Crystal Collector</h1>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-12">
+        <div class="panel panel-danger">
+          <div class="panel-title text-center">
+            <h2 class="">Instructions</h2>
+          </div>
+          <div class="panel-body">
+            <p>
+              <small>You will be given a random number at the beginning of the game. There are 4 coloured crystals below. By clicking
+                the crystal you will add a specific amount of points to your total score. You will win the game by matching
+                your total score to the random number, you will lose the game if your total score above the random number.
+                The value of each crystal is hidden from you until you click it. Each time when the game starts, the game
+                will change the values of each crystal. Good Luck!</small>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-3">
+        <div class="panel panel-danger">
+          <div class="panel-heading">
+            <div class="text-center">
+              <h4>Target Score</h4>
+            </div>
+            <div class="panel-body">
+              <div class="text-center" id="targetScore">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="panel panel-danger">
+          <div class="panel-heading">
+            <div class="text-center">
+              <h4>Your Score</h4>
+            </div>
+            <div class="panel-body">
+              <div class="text-center" id="yourScore">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="panel panel-danger">
+          <div class="panel-heading">
+            <div class="text-center">
+              <h4>Crystal Selection</h4>
+            </div>
+            <div class="panel-body text-center">
+              <img src="images/CircleDiamond.png" alt="" id "circle">
+              <img src="images/RectangleDiamond.png" alt="" id="rectangle">
+              <img src="images/TearDiamond.png" alt="" id="tear">
+              <img src="images/HeartDiamond.png" alt="" id="heart">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="panel panel-danger">
+        <div class="panel-heading">
+          <div class="text-center">
+            <h4>Win Count</h4>
+          </div>
+          <div class="panel-body">
+            <div class="text-center" id="winCount">
+              <h2>0</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-6">
+      <div class="panel panel-danger">
+        <div class="panel-heading">
+          <div class="text-center">
+            <h4>Loss Count</h4>
+          </div>
+          <div class="panel-body">
+            <div class="text-center" id="lossCount">
+              <h2>0</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="logic.js"></script>
+</body>
+
+</html>
